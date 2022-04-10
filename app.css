@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+list-style: none;
+text-decoration: none;
+}
+body{
+    background-color: #feeae6;
+}
+.container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.marks {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgba(13, 13, 13, 0.999);
+    color: rgb(118, 118, 118);
+}
+@media (max-width : 887px){
+    .marks {
+        top: 80px;
+    }   
+}
+.marks h2 {
+    text-align: center;
+}
+.marks a {
+    text-transform: uppercase;
+    color: rgba(118, 118, 118, 0.722);
+font-weight: 500;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+@media (max-width : 887px) {
+    .search-box {
+        width: 400px;
+        margin-bottom:150px;
+
+    }   
+}
+.search-box input {
+    position: relative;
+    left: 0%;
+    outline: none;
+    padding: 10px 33px;
+    border: none;
+    color: rgb(118, 118, 118);
+    font-size: 15px;
+    width: 100%;
+    border-radius: 6px;
+    background-color: rgba(13, 13, 13, 0.999);
+}
+.search-box i{
+    position: absolute;
+    color: rgb(118, 118, 118);
+    z-index: 99;
+    font-size: 25px;
+    padding: 5px;
+    font-weight: 500;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.images {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.image-box{
+    position: relative;
+    height: 370px;
+    width: 250px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 8px;
+    cursor: pointer;
+}
+.image-box:hover img {
+    transform: scale(1.05);
+}
+.image-box img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s linear;
+
+}
+.image-box h5 {
+    position: absolute;
+    color: white;
+    z-index: 99;
+    bottom: 5px;
+    left: 10px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: capitalize;
+}
